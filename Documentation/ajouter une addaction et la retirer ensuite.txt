@@ -1,0 +1,24 @@
+////====ne marche qu'en SP
+startActionId = inst addaction ["Rejouer le dialogue","dialogue.sqf"];
+inst removeAction startActionId;
+
+
+///methode mp marche:
+[[radioguy, ["Appeler l'évacuation","medevac.sqf"]],"addAction",true,true] call BIS_fnc_MP;
+
+pour enlever l'add
+_actions = actionIDs radioguy;
+_id = (_actions select 0);
+radioguy removeAction _Id;
+
+
+//==== methode MP
+///===1 via code
+if (isDedicated) then
+{
+    
+    [_obj, ["Greetings!", {hint "Hello!"}]] remoteExec ["addAction", -2, _obj];
+};
+
+///===2 via init box
+["file.sqf"] remoteExec ["addAction", -2];

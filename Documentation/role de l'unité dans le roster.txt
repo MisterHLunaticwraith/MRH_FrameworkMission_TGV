@@ -1,0 +1,14 @@
+//
+//		(optional) Mission Maker can change groups name using : 
+//
+(group this) setGroupID ["Group Name"];
+//
+//					in the group leader init field
+//
+
+//
+//		(optional) Mission Maker can change unit's display name :
+//
+this setVariable ["displayName","Unit Custom Name"];
+//
+//					in the unit's init field (this will overwrite Role param)

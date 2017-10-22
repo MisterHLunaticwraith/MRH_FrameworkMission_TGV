@@ -1,0 +1,4 @@
+_smokeRedgear = "SmokeShellGreen" createVehicle (position OBJET);
+_smokeRedgear attachto [OBJET, [0,0,0]];
+
+//peuvent être "SmokeShellRed" , "SmokeShellGreen"  ,"SmokeShellWhite" et autres couleurs à tester

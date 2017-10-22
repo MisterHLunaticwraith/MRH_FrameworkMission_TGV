@@ -1,0 +1,30 @@
+
+//========texte au milieu en blanc, fond noir fade
+["<t font='PuristaBold' size='1.25'>" + "4 heures plus tard" + "</t>", 0, 0.4, 6, -1, 0, 3011] spawn bis_fnc_dynamicText;
+titleText ["", "BLACK IN", 10];
+///=========texte en bas à droite lettres s'affichent progressivement avec un bip
+any= ["Operation" ,
+"Desert Sabre" ,
+ "Mai 2009,Sebha,Lybie"
+] spawn BIS_fnc_infoText;
+
+/////===== spwan en haut s'affiche lettres par lettres, en blanc
+_handle = [parseText format [ "<t align='center' size='2'>%1</t>", toUpper "2 HEURES PLUS TARD"], [0,0,1,1], [10,1], 3, 0.7, 0] spawn BIS_fnc_textTiles;
+
+///=== façon sitrep
+[
+	[
+		"*********"////texte 1 remplacer les étoiles par le texte
+	],
+	[
+		(str(date select 2) + "-" + str(date select 1) + "-" + str(date select 0)),/////date prise des réglages de mission
+		1,
+		5
+	],
+	[
+		"*************", ////texte 2 s'affiche plus tard
+		1, 
+		1, 
+		4
+	]
+] spawn BIS_fnc_EXP_camp_SITREP;

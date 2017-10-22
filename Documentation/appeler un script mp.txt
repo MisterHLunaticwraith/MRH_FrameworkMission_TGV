@@ -1,0 +1,2 @@
+//// appeler un script mp sur toutes les machines
+[[[], "outro.sqf"], "BIS_fnc_execVM", true] call BIS_fnc_MP;

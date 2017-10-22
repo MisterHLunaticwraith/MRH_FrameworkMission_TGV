@@ -1,0 +1,18 @@
+_veh = [[(getposATL REFERENCE select 0) -75 , (getPosATL REFERENCE  select 1) -200,(getPosATL REFERENCE  select 2) +25],ORIENTATION,"VEHICULE", SIDE] call BIS_fnc_spawnVehicle;
+
+/*
+0=REFERENCE = Objet par rapport auquel le véhicule est spawné, coordonnées ATL 
+[x,y,z]
+x= -01 négatif Gauche +01 positif droite ex (getposATL REFERENCE select 0) -75 ==>75m à gauche
+y= -01 négatif  arrière +01 positif avant ex(getposATL REFERENCE select 0) -200 ==> 200m derrière 
+z= altitude ex (getposATL REFERENCE select 0) +25 ==> 25m au dessus
+
+1=ORIENTATION
+en degrés, Azimuth vers lequel spawne le véhicule
+
+2=VEHICULE
+CfgClass du véhicule exemple "rsusf_f22"
+
+3=SIDE
+EAST/WEST/INDEPENDANT
+*/

@@ -1,0 +1,2 @@
+//// soigner les joueurs dans une trigger avec ace:
+{[_x, _x] call ACE_medical_fnc_treatmentAdvanced_fullHeal} Foreach thislist; hint "Joueur soigné";

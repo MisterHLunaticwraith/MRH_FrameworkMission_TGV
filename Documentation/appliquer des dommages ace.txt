@@ -1,0 +1,90 @@
+//exemple
+[pilot, "body", 0.3, objNull, "vehiclecrash", 0.3, objNull] call ace_medical_fnc_handleDamage;
+/*
+/////Solution 1 avec  call ace_medical_fnc_handleDamage;
+ [TARGET, SELECTION, DAMAGE, objNull, PROJECTILE_OR_TYPE, SELECTION, objNull] call ace_medical_fnc_handleDamage;
+
+0=TARGET =Unit To Wound player
+1=SELECTION=HitPoint Name Details "head"
+    "head"
+    "body"
+    "arm_r"
+    "arm_l"
+    "leg_r"
+    "leg_l"
+2=DAMAGE= Damage Value 0.5
+3=objNull
+4=PROJECTILE Projectile "rhs_ammo_556x45_M855A1_Ball" Can also be an object reference to the round in flight. ===> Marche aussi avec type de blessure
+4Bis= TYPE
+The last bit is the type of damage dealt. This is the most important one, as it determines what the resulting injuries are.
+
+    "bullet"
+    "grenade"
+    "explosive"
+    "shell"
+    "vehiclecrash"
+    "backblast"
+    "stab"
+    "punch"
+    "falling"
+    "ropeburn"
+    "unknown"
+5=SELECTION A remettre, va savoir pkoi....
+6 =objNull
+
+
+//////////////////////////////////////////////////////////////////////////
+ ==> Solution 2 juste pour le show, pas d'effets réels
+//[TARGET, SELECTION, DAMAGE, SOURCE, TYPE] call ace_medical_fnc_handleDamage_assignWounds;
+
+
+ARGUMENTS:
+0=TARGET  Unit To Wound player
+1=SELECTION =HitPoint Name Details "head"
+2=DAMAGE= Damage Value 0.5
+3=SOURCE =Shooter/Source of Damage objNull Actually not used at all.
+4=TYPE =Type Of Damage "bullet" Can also be an object reference to the round in flight.
+Selection
+///
+Selection is any of the following:
+
+    "head"
+    "body"
+    "arm_r"
+    "arm_l"
+    "leg_r"
+    "leg_l"
+///Ce qui suit est à vérifier
+	For damage you also want the original damage, otherwise it will not do anything. If you are using new units that have not yet been injured, this does not matter to much as the damage would be 0. To figure this out;
+
+_damage = (TARGET getHitPointDamage HITPOINT) + NEW_DAMAGE;
+
+HITPOINT is any of the following:
+
+    "HitHead"
+    "HitBody"
+    "HitLeftArm"
+    "HitRightArm"
+    "HitRightLeg"
+    "HitLeftLeg"
+////////////////////
+SOURCE
+Source is an object that indicates where the damage came from. You can use ObjNull as the value for this or the target itself.
+Type
+
+TYPE
+The last bit is the type of damage dealt. This is the most important one, as it determines what the resulting injuries are.
+
+    "bullet"
+    "grenade"
+    "explosive"
+    "shell"
+    "vehiclecrash"
+    "backblast"
+    "stab"
+    "punch"
+    "falling"
+    "ropeburn"
+    "unknown"
+
+*/
