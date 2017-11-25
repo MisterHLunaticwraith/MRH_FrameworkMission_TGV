@@ -1,3 +1,0 @@
-//========appliquer une texture custom à certains objets (panneaux, écrans etc.)===========
-//dans l'init box de l'objet
-this setObjectTexture [0, "repertoire\nomdefichier.paa"]; //<= marche aussi avec les jpg

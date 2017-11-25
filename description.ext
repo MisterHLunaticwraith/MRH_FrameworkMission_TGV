@@ -38,35 +38,6 @@ class CfgSounds
 };
 ////=============fincfgSounds=====
 
-/////=========cfgCloudlets==========
-class cfgCloudlets
-{
-#include "cfghpp\cfgcloudlets.hpp"
-};
-////=============fincfgCloudlets
-
-////=====================FinDesCFG=================================================
 
 
 
-///==========composants des menusCORE====
-
-/////////////////======Ressources MRHRoster
-#include "MRHRoster\definesroster.hpp"
-#include "MRHRoster\dialogroster.hpp"
-/////////////////======Fin Ressources MRHRoster
-
-/////////////////======Ressources MRHRoster
-#include "MRHJipMenu\definesJIP.hpp"
-#include "MRHJipMenu\dialogsJIP.hpp"
-/////////////////======Fin Ressources MRHRoster
-
-///==========FINcomposants des menusCORE====
-
-//==============MissionSpécifiqueExtras==========
-//insérer les includes spécifiques à la mission ici
-
-/////////////////======Ressources MRHACCMenu
-#include "MRHACCMenu\definesACC.hpp"
-#include "MRHACCMenu\dialogsACC.hpp"
-/////////////////======Fin Ressources MRHACCMenu

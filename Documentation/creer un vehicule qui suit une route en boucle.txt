@@ -1,9 +1,0 @@
-//====== avoir un véhicule qui cycle une route=====
-// créer le véhicule (ex bus1) et lui faire ses waypoint (avec yn cycle à la fin)
-/// créer un marqueur (ex br1_000)
-/// créer une trigger qui detecte le bus à l'arrivée et dans on activation:
-bus1 setPosATL getmarkerPos "br1_000";
-
-bus1 setdir 90; ///<== remettre le bus dans la bonne position, angle à changer en mettant celui de la pos de depart
-///// /!\important mettre un waypoint cycle relié au 1er waypoint, mettre le dernier waypoint seulement dans la zone de trigger et laisser le temps au véhicule
-//// d'atteindre le dernier waypoint en mettant un countdown sur la trigger==> pour que le cycle soit rechargé.

@@ -21,15 +21,8 @@ f_script_briefing = [] execVM "briefing.sqf";
 //génére les guides TGV
 0= execVM "CoreScripts\briefing\guidesetinfos.sqf";
 //InitialiseLesVariablesDudecomptedesmorts
-0= execVM "CoreScripts\initadmindeadcount.sqf";
+
 //========FIN=CORE=SCRIPTS================
-
-
-//==================================ExtraCoreModules=======
-///////////////////====lance le module roster
-0= [] execVM "MRHRoster\rosterinit.sqf";
-////////////////////////====MRHRoster©MrH.2017
-//==========FIN=ExtraCoreModules===========================
 
 
 //=============ScriptsSpécifiquesAlaMission=====

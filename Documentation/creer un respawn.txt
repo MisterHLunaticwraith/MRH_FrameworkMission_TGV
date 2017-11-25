@@ -1,6 +1,0 @@
-//=======créer un respawn===
-// Parfois le module respawn de l'éditeur fonctionne mal, remplacez le par un marqueur avec respawn_west comme nom de variable
-// et ajoutez le code suivant au début du description.ext
-respawnOnStart = -1;
-respawn = "base";
-//======================================================

@@ -1,8 +1,0 @@
-//=====rampe arrière du chinook
-NOMOBJ animateSource ['ramp_anim', 0];
-
-//===== rampe arrière du c130
-NOMOBJ animateSource ['ramp', 0.65];
-
-//=== temoin de saut du c130
-NOMOBJ animateSource ['jumplight', 1];

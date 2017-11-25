@@ -1,7 +1,7 @@
 
  
  ///===execute la vidéo du logo TGV
- _video = ["media\video\tgv.ogv"] spawn BIS_fnc_titlecard; waitUntil {!(isNil "BIS_fnc_titlecard_finished")};
+call TGV_fnc_splashVideoSkippable;
  
  ////===========Execute les messages d'acceuil========
 [] execVM "CoreScripts\welcome.sqf";
@@ -33,9 +33,3 @@ player cameraEffect ["terminate","back"];
 camDestroy _introcam;
 camDestroy _playercam;
 
-////////======initialise la variable hasdied pour le menu jip
-player setVariable ["hasDied", false];
-
-//=====initialise le JIP si le joueur spawne plus de deux minutes après le lancement
-if (time >120) exitWith {jipmenuinit = [] execVM "MRHJipMenu\corefunction.sqf";
-};
