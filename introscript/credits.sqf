@@ -25,8 +25,8 @@ _role6names = [profileName]; //In white
 sleep 2;
 _memberFunction = _x select 0;
 _memberNames = _x select 1;
-_finalText = format ["<t size='1' color='#f2cb0b' align='right'>%1<br /></t>", _memberFunction]; //Changes colours
-_finalText = _finalText + "<t size='2' color='#FFFFFF' align='right'>";
+_finalText = format ["<t size='1' color='#878681' align='right' font = 'PuristaLight'>%1<br /></t>", _memberFunction]; //Changes colours
+_finalText = _finalText + "<t size='2' color='#878681' align='right' font = 'PuristaLight'>";
 {_finalText = _finalText + format ["%1<br />", _x]} forEach _memberNames;
 _finalText = _finalText + "</t>";
 _onScreenTime + (((count _memberNames) - 1) * 0.5);
@@ -48,7 +48,3 @@ sleep (_onScreenTime);
 [_role6, _role6names]
 ];
 //=======texte de nom de mission
-any= ["Operation" ,
-"Riot Shield" ,
- "Par Mr H."
-] spawn BIS_fnc_infoText;

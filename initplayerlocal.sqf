@@ -1,13 +1,12 @@
 
  
- ///===execute la vidéo du logo TGV
-call TGV_fnc_splashVideoSkippable;
+
  
  ////===========Execute les messages d'acceuil========
 [] execVM "CoreScripts\welcome.sqf";
 [] execVM "CoreScripts\popup.sqf";
 ///Texte d'intro
-[] execVM "CoreScripts\introtext.sqf";
+//[] execVM "CoreScripts\introtext.sqf";
 
 
 /////=== ajoute des bouchons d'oreilles à l'inventaire du joueur
@@ -33,3 +32,5 @@ player cameraEffect ["terminate","back"];
 camDestroy _introcam;
 camDestroy _playercam;
 
+ ///===execute la vidéo du logo TGV
+call TGV_fnc_splashVideoSkippable;
