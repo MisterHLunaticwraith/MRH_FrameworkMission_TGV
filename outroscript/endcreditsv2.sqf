@@ -1,6 +1,6 @@
 _duree = _this select 0;
 
-_includeAI 	= 1;//0->only players, 1->both AI and players, 2->playable units only (includes player and some AI)
+_includeAI 	= 0;//0->only players, 1->both AI and players, 2->playable units only (includes player and some AI)
 _rank 		= true;//true->display unit's rank		false->hide unit's rank
 _role 		= true;//true->display unit's role		false->hide unit's role
 _strRank 		= "";//will contain unit's rank
