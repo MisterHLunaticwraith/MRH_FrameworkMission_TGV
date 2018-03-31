@@ -1,6 +1,8 @@
 //sounds[] = {briefing};
 
 /*
+//ci-dessous template à copier coller hors des commentaires
+/// 
 class NOM
 {
 
@@ -20,11 +22,3 @@ titles[] = {};
 };
 */
 
-class NOM
-{
-
-name     = "OST";
-sound[]  = {"\media\music\NOM.ogg", 5, 1, 100};
-titles[] = {};
-
-};

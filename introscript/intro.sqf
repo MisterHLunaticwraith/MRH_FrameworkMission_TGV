@@ -1,5 +1,7 @@
-//nul = [] execVM "introscript\intro.sqf";
+/*
+Template d'intro, décommentez ce dont vous avez besoin.
 
+*/
 /////====== Pour lancer un cheminement préenregistré d'un véhicule (voir path.sqf)
 ///nul = [] execVM "introscript\path.sqf";
 
@@ -11,23 +13,23 @@
 ///nul= execVM "introscript\credits.sqf";
 
 //////=======bordures noires
-showCinemaBorder true; 
+//showCinemaBorder true; 
 
-
+/*
 //===prise de vue
 ///////////cam1/cam2/ cible /dur/foc1/foc2/attach/ x/y/ z /effet   /trans/durtrans
-prise1 = [cam1, cam1,target,5, 0.1, 0.1 ,false, 0, 0, 0,"chromatic","blur",4] execVM "introscript\machinery\cam.sqf";
+prise1 = [cam1, cam1,target,5, 0.1, 0.1 ,false, 0, 0, 0,"none","none",0] execVM "introscript\machinery\cam.sqf";
 waitUntil {scriptDone prise1}; 
 
 
 
-////======destruction de la camera ne pas editer 
+////======destruction de la camera ne pas editer /// laisser le code ci-dessous à la fin de votre cinématique
 _cam = "camera" camCreate (position player);
 camDestroy _cam;
 player cameraEffect ["terminate","back"];
+*/
 
-
-///////========================================================== description detaillée des params de lancement:
+///////========================================================== description detaillée des params de lancement: POUR INFO, NE PAS DECOMMENTER
 /*Detail
 prise1 =
  [
@@ -53,7 +55,7 @@ prise1 =
  0,
  //screen_effect "none", "nightvision", "thermal", "blackwhite", "grain", "blur", "wet","chromatic","invert"
  "nightvision",
- //transition_effect "none", "black","white", "blur"//NEPASUTILISEBLACKOUWHITE
+ //transition_effect "none", "black","white", "blur"//NEPASUTILISE BLACK OU WHITE ==> bugguent
  "blur",
  //transition_duration en secondes
  2,
@@ -72,22 +74,3 @@ waitUntil {scriptDone prise1};
 
 
 
-/* vieille version 
-
-/////===========1 plan de caméra====
-
-////==Plan N°...
- _camera = "camera" camCreate (getposATL NOMOBJETCAMERA);  
- _camera cameraEffect ["internal", "BACK"]; 
- _camera camCommand "inertia off"; 
- _camera camPrepareTarget NOMOBJETCIBLE; 
- _camera camPrepareFOV 0.5; 
- _camera camCommitPrepared 6;
- sleep 10; //// durée du plan
- 
-
- /////=========Fin cutscene
-    _camera cameraeffect ["terminate", "back"];
-		camDestroy _camera;
-//DeleteVehicle NOMOBJETASUPPRIMER;
-*/
