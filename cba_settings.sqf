@@ -294,3 +294,22 @@ force ace_arsenal_fontHeight = 5.31722;
 force ace_arsenal_allowDefaultLoadouts = true;
 force ace_arsenal_allowSharedLoadouts = true;
 force ace_arsenal_EnableRPTLog = true;
+
+// MRH_MilsimTools - Core settings
+MRH_MilsimTools_AdminCasualtiesCap = 60;
+force MRH_MilsimTools_AllowDeadReco = true;
+force MRH_MilsimTools_Delete_disconnected_body = true;
+force MRH_MilsimTools_PlayIntro_ToPlayer = true;
+force MRH_MilsimTools_ResetHasDiedOnRespawn = false;
+force MRH_MilsimTools_Rmv_map_nolead = true;
+force MRH_MilsimTools_ShowAdminDeadHint = true;
+// MRH_MilsimTools - JIP settings
+force MRH_MilsimTools_Jip_Menu_sideOnly = true;
+force MRH_MilsimTools_Jip_MenuAllow = true;
+force MRH_MilsimTools_Jip_MenuIncludeAI = false;
+// MRH_MilsimTools - Roster settings
+force MRH_MilsimTools_Roster_AllowAllSides = false;
+force MRH_MilsimTools_Roster_ShowAIgroups = false;
+force MRH_MilsimTools_Roster_ShowAiWithinGrps = false;
+
+

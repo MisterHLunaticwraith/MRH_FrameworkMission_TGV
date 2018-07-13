@@ -15,7 +15,7 @@ _role4names = ["RHS Escalation / Project Opfor "];
 _role5 = "Avec la participation de";
 _role5names = ["La team TGV"];
 _texte= "Et dans le role de ";
-_role = player getVariable "displayname";
+_role = (player getVariable "MRH_MilsimTools_Core_PlayerIntel") select 1;
 _role6 = _texte + _role; //In yellow
 _role6names = [profileName]; //In white
 

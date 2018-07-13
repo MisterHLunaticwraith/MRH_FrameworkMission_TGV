@@ -94,21 +94,6 @@ hintsilent 'Appuyer sur R pour quitter';"">
 Cliquer ici pour entrer en mode spectateur. Touche R pour quitter.</execute><br/>
 ";
 
-
-// ====================================================================================
-// ====================================================================================
-// MENUDESPERTES
-//===passe l'admin en en spec
-
-_briefing = _briefing + "
-<font size='18'>OUVRIR LE MENU DE GESTION DES PERTES</font><br/>
-|- <execute expression="" ['MRHACCMenu\corefunction.sqf'] call BIS_fnc_execVM;
-hintsilent 'Menu ouvert';"">
-Cliquer ici pour ouvrir le menu admin de gestion des pertes.</execute><br/>
-";
-
-
-// ====================================================================================
 // ====================================================================================
 
 // SAFE START SECTION
