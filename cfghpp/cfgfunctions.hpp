@@ -32,3 +32,14 @@ class F // Defines the "owner"
 
 
 };
+class MRH // Defines the "owner"
+{
+
+	class MissionFunctions// category
+	{
+	tag = "MRH";
+	file = "MissionFunc";
+	};
+	
+	
+};
